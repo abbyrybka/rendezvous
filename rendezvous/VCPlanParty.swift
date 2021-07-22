@@ -14,7 +14,15 @@ class VCPlanParty: UIViewController {
     
     let datePicker = UIDatePicker()
     
-   
+    @IBOutlet weak var textNotes: UITextField!
+    
+    @IBOutlet weak var dateLabel: UILabel!
+    
+    @IBOutlet weak var timeLabel: UILabel!
+    
+    @IBOutlet weak var notesLabel: UILabel!
+    
+    @IBOutlet weak var partyNameLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
