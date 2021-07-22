@@ -12,6 +12,14 @@ class VCPlanParty: UIViewController {
     @IBOutlet weak var partydatePicker: UITextField!
     @IBOutlet weak var textField: UITextField!
     
+
+    @IBOutlet weak var partyEventTextField: UITextField!
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "Segue2"{
+                let destinationController = segue.destination as! thirdViewController
+                destinationController.eventNameGenerated = partyEventTextField.text!
+            }
+        }
     let datePicker = UIDatePicker()
     
     @IBOutlet weak var textNotes: UITextField!
@@ -23,6 +31,9 @@ class VCPlanParty: UIViewController {
     @IBOutlet weak var notesLabel: UILabel!
     
     @IBOutlet weak var partyNameLabel: UILabel!
+    
+    @IBAction func GenerateInvite(_ sender: UIButton) {
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -80,5 +91,6 @@ createDatePicker()
         partydatePicker.text = formatter.string(from: datePicker.date)
         self.view.endEditing(true)
     }
-   
+
+    
     }

@@ -126,14 +126,24 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrA-xx-fnj">
+                                <rect key="frame" x="175" y="618" width="46" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="GenerateInvite:" destination="BrV-hS-VLH" eventType="touchUpInside" id="eTG-BD-Fm9"/>
+                                    <segue destination="h1m-Dt-65O" kind="show" identifier="Segue2" id="CvH-BA-lxn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ij2-AG-wyk"/>
-                        <color key="backgroundColor" red="0.73333333333333328" green="0.90196078431372551" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.80392158030000005" green="0.9098039269" blue="0.91372549530000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="V6D-5L-Mkr"/>
                     <connections>
                         <outlet property="dateLabel" destination="6vA-uZ-b7X" id="upl-X4-pTa"/>
                         <outlet property="notesLabel" destination="lts-aK-QRa" id="eAk-G3-Jz1"/>
+                        <outlet property="partyEventTextField" destination="1Rc-a9-238" id="W74-0E-k7q"/>
                         <outlet property="partyNameLabel" destination="f58-Nt-elt" id="wif-au-XNp"/>
                         <outlet property="partydatePicker" destination="AmL-4s-cUR" id="OwF-q0-WoS"/>
                         <outlet property="textField" destination="ABx-70-RAA" id="BuY-rY-YxB"/>
@@ -144,6 +154,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vgl-Dc-A9R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="911.59420289855075" y="77.678571428571431"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="Nlw-Lc-yAU">
+            <objects>
+                <viewController id="h1m-Dt-65O" customClass="thirdViewController" customModule="rendezvous" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zIg-v7-p8k">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8I-Ee-Tow">
+                                <rect key="frame" x="163" y="276" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Rki-EE-OI3"/>
+                        <color key="backgroundColor" red="0.77647060160000003" green="0.91764706370000004" blue="0.91372549530000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="K3I-5j-tjz"/>
+                    <connections>
+                        <outlet property="generateEventName" destination="h8I-Ee-Tow" id="cVF-Un-sPU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zah-S6-XoJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1699" y="78"/>
         </scene>
     </scenes>
     <resources>

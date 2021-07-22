@@ -17,6 +17,7 @@
 		A84FDBBB26A740B80013A63D /* rendezvousTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FDBBA26A740B80013A63D /* rendezvousTests.swift */; };
 		A84FDBC626A740B80013A63D /* rendezvousUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FDBC526A740B80013A63D /* rendezvousUITests.swift */; };
 		A881C08326A86DC600253FFD /* VCPlanParty.swift in Sources */ = {isa = PBXBuildFile; fileRef = A881C08226A86DC600253FFD /* VCPlanParty.swift */; };
+		FD84BCFE26A9E21900D32BBB /* thirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD84BCFD26A9E21900D32BBB /* thirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		A84FDBC526A740B80013A63D /* rendezvousUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rendezvousUITests.swift; sourceTree = "<group>"; };
 		A84FDBC726A740B80013A63D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A881C08226A86DC600253FFD /* VCPlanParty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCPlanParty.swift; sourceTree = "<group>"; };
+		FD84BCFD26A9E21900D32BBB /* thirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				A84FDBA226A740B70013A63D /* SceneDelegate.swift */,
 				A84FDBA426A740B70013A63D /* ViewController.swift */,
 				A84FDBA626A740B70013A63D /* Main.storyboard */,
+				FD84BCFD26A9E21900D32BBB /* thirdViewController.swift */,
 				A84FDBAC26A740B80013A63D /* Assets.xcassets */,
 				A84FDBAE26A740B80013A63D /* LaunchScreen.storyboard */,
 				A84FDBB126A740B80013A63D /* Info.plist */,
@@ -266,6 +269,7 @@
 			files = (
 				A881C08326A86DC600253FFD /* VCPlanParty.swift in Sources */,
 				A84FDBAB26A740B70013A63D /* rendezvous.xcdatamodeld in Sources */,
+				FD84BCFE26A9E21900D32BBB /* thirdViewController.swift in Sources */,
 				A84FDBA526A740B70013A63D /* ViewController.swift in Sources */,
 				A84FDBA126A740B70013A63D /* AppDelegate.swift in Sources */,
 				A84FDBA326A740B70013A63D /* SceneDelegate.swift in Sources */,
