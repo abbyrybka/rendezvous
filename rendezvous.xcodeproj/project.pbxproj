@@ -16,6 +16,7 @@
 		A84FDBB026A740B80013A63D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A84FDBAE26A740B80013A63D /* LaunchScreen.storyboard */; };
 		A84FDBBB26A740B80013A63D /* rendezvousTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FDBBA26A740B80013A63D /* rendezvousTests.swift */; };
 		A84FDBC626A740B80013A63D /* rendezvousUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FDBC526A740B80013A63D /* rendezvousUITests.swift */; };
+		A881C08326A86DC600253FFD /* VCPlanParty.swift in Sources */ = {isa = PBXBuildFile; fileRef = A881C08226A86DC600253FFD /* VCPlanParty.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		A84FDBC126A740B80013A63D /* rendezvousUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rendezvousUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A84FDBC526A740B80013A63D /* rendezvousUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rendezvousUITests.swift; sourceTree = "<group>"; };
 		A84FDBC726A740B80013A63D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A881C08226A86DC600253FFD /* VCPlanParty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCPlanParty.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				A84FDBAE26A740B80013A63D /* LaunchScreen.storyboard */,
 				A84FDBB126A740B80013A63D /* Info.plist */,
 				A84FDBA926A740B70013A63D /* rendezvous.xcdatamodeld */,
+				A881C08226A86DC600253FFD /* VCPlanParty.swift */,
 			);
 			path = rendezvous;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A881C08326A86DC600253FFD /* VCPlanParty.swift in Sources */,
 				A84FDBAB26A740B70013A63D /* rendezvous.xcdatamodeld in Sources */,
 				A84FDBA526A740B70013A63D /* ViewController.swift in Sources */,
 				A84FDBA126A740B70013A63D /* AppDelegate.swift in Sources */,
