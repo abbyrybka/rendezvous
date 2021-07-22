@@ -53,7 +53,7 @@
 		A84FDBC126A740B80013A63D /* rendezvousUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rendezvousUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A84FDBC526A740B80013A63D /* rendezvousUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rendezvousUITests.swift; sourceTree = "<group>"; };
 		A84FDBC726A740B80013A63D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A881C08226A86DC600253FFD /* VCPlanParty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCPlanParty.swift; sourceTree = "<group>"; };
+		A881C08226A86DC600253FFD /* VCPlanParty.swift */ = {isa = PBXFileReference; indentWidth = 3; lastKnownFileType = sourcecode.swift; path = VCPlanParty.swift; sourceTree = "<group>"; };
 		FD84BCFD26A9E21900D32BBB /* thirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 

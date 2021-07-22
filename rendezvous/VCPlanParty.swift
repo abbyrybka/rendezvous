@@ -10,19 +10,16 @@ import UIKit
 class VCPlanParty: UIViewController {
 
     @IBOutlet weak var partydatePicker: UITextField!
-    @IBOutlet weak var textField: UITextField!
     
-
+    @IBOutlet weak var partyNotes: UITextView!
+    
+    @IBOutlet weak var partyTimePicker: UITextField!
+    
     @IBOutlet weak var partyEventTextField: UITextField!
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            if segue.identifier == "Segue2"{
-                let destinationController = segue.destination as! thirdViewController
-                destinationController.eventNameGenerated = partyEventTextField.text!
-            }
-        }
+   
     let datePicker = UIDatePicker()
     
-    @IBOutlet weak var textNotes: UITextField!
+    
     
     @IBOutlet weak var dateLabel: UILabel!
     
@@ -34,6 +31,28 @@ class VCPlanParty: UIViewController {
     
     @IBAction func GenerateInvite(_ sender: UIButton) {
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            
+            //connects textfield event name to 3rdVC
+        if segue.identifier == "Segue2"{
+                let destinationController = segue.destination as! thirdViewController
+                destinationController.eventNameGenerated = partyEventTextField.text!
+            }
+        //connects textfield date to 3rdVC
+        if segue.identifier == "Segue2"{
+            let destinationController = segue.destination as! thirdViewController
+            destinationController.dateGenerated = partydatePicker.text!
+        }
+        if segue.identifier == "Segue2"{
+            let destinationController = segue.destination as! thirdViewController
+            destinationController.notesGenerated = partyNotes.text!
+        }
+        if segue.identifier == "Segue2"{
+            let destinationController = segue.destination as! thirdViewController
+            destinationController.timeGenerated = partyTimePicker.text!
+        }
+    }
+        
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,22 +61,22 @@ createDatePicker()
         let time = Date()
         let formatter = DateFormatter()
         formatter.dateFormat = "hh:MM a"
-        textField.text = formatter.string(from: time)
-        textField.textColor = .link
+        partyTimePicker.text = formatter.string(from: time)
+       partyTimePicker.textColor = .link
         
     
         let timePicker = UIDatePicker()
         timePicker.datePickerMode = .time
         timePicker.addTarget(self, action: #selector(timePickerValueChanged(sender:)) , for: UIControl.Event.valueChanged)
         timePicker.frame.size = CGSize(width: 0, height: 250)
-        textField.inputView = timePicker
-    }
+     partyTimePicker.inputView = timePicker
+   }
     
     @objc func timePickerValueChanged(sender: UIDatePicker) {
         //when time is changed it will appear here
         let formatter = DateFormatter()
         formatter.dateFormat = "hh:mm a"
-        textField.text = formatter.string(from: sender.date)
+      partyTimePicker.text = formatter.string(from: sender.date)
     }
     
     func createDatePicker() {
@@ -93,4 +112,7 @@ createDatePicker()
     }
 
     
-    }
+    
+
+ }
+
