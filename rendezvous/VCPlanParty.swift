@@ -11,7 +11,8 @@ class VCPlanParty: UIViewController {
 
     @IBOutlet weak var partydatePicker: UITextField!
     
-    @IBOutlet weak var partyNotes: UITextView!
+  
+    @IBOutlet weak var partyNotes: UITextField!
     
     @IBOutlet weak var partyTimePicker: UITextField!
     
